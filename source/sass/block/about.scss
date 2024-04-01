@@ -162,9 +162,7 @@
   height: 230px;
   left: 0;
   bottom: 0;
-  background-image: url("../../img/video.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: $light-grey;
 }
 
 @media (width <= 1365px) {
