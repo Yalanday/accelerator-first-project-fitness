@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  font-family: $font-page;
+  color: $dark-blue;
+  font-size: $font-medium;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+main {
+  flex: 1;
+}
