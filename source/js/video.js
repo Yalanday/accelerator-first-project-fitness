@@ -1,10 +1,6 @@
-
-
 (function () {
   const videos = document.querySelectorAll('.video__iframe');
   videos.forEach((video) => {
-    // video.style.backgroundImage = 'url("../../img/video.jpeg")';
-
     video.addEventListener('click', function () {
       const iframe = document.createElement('iframe');
       const iframeUrl = 'https://www.youtube.com/embed/9TZXsZItgdw?si=VFkFBN7VULiRVdno&autoplay=1';
@@ -16,11 +12,9 @@
       iframe.setAttribute('frameborder', '0');
       iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
       iframe.setAttribute('allowfullscreen', '');
-
       iframe.style.position = 'absolute';
       iframe.style.width = '100%';
       iframe.style.height = '100%';
-
       this.replaceWith(iframe);
     });
 

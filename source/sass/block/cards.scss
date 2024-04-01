@@ -92,8 +92,11 @@
 }
 
 .card__button {
+  @include link-style;
+  text-align: center;
   width: 195px;
   height: 66px;
+
 
   &:focus {
     outline: none;

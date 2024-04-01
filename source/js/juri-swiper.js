@@ -1,11 +1,27 @@
 import Swiper from 'swiper';
-import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import { Keyboard, Navigation, Pagination } from 'swiper/modules';
+
+const juriBtnNext = document.querySelector('.juri__swiper-button-next');
+const juriBtnPrev = document.querySelector('.juri__swiper-button-prev');
+
+const juriKeydownBtn = (button) => {
+  button.addEventListener('keydown', (evt) => {
+    if (evt.key === ' ' || evt.key === 'Spacebar') {
+      evt.preventDefault();
+      button.click();
+    }
+  });
+};
+
+juriKeydownBtn(juriBtnNext);
+juriKeydownBtn(juriBtnPrev);
 
 export const swiperJuri = new Swiper('.juri__swiper', {
-  modules: [Navigation, Pagination, Mousewheel, Keyboard], //подключаем модуль навигации по кнопкам
+  modules: [Navigation, Pagination, Keyboard], //подключаем модуль навигации по кнопкам
   breakpoints: {
     320: {
       slidesPerView: 1,
+      initialSlide: 2,
     },
     768: {
       slidesPerView: 2,
@@ -20,9 +36,7 @@ export const swiperJuri = new Swiper('.juri__swiper', {
     enabled: true,
     onlyInViewport: false,
   },
-  mousewheel: {
-    sensitivity: 1,
-  },
+
   navigation: {
     nextEl: '.juri__swiper-button-next', // кнопка вперед
     prevEl: '.juri__swiper-button-prev' //  кнопка назад
