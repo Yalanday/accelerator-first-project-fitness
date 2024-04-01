@@ -1,0 +1,88 @@
+.reviews-card {
+  width: 560px;
+  height: 258px;
+  padding: 60px;
+  background-color: $resulution-blue;
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+}
+
+@media (max-width: $tablet-width) {
+  .reviews-card {
+    width: 500px;
+    height: 242px;
+    padding: 40px 30px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .reviews-card {
+    width: 240px;
+    height: 328px;
+    padding: 30px 25px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+}
+
+
+.reviews-card img {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: $mobile-width) {
+  .reviews-card img {
+    margin: 0 auto;
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.reviews-card figcaption {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: $mobile-width) {
+  .reviews-card figcaption {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+
+.reviews-card cite {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  font-style: normal;
+  text-align: start;
+  color: $default-white;
+}
+
+@media (max-width: $mobile-width) {
+  .reviews-card cite {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.reviews-card blockquote {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $default-white;
+}
+
+@media (max-width: $mobile-width) {
+  .reviews-card blockquote {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}

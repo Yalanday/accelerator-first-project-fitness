@@ -1,0 +1,277 @@
+.offers {
+  width: 1366px;
+  margin: 0 auto;
+  padding: 100px 103px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers {
+    width: 768px;
+    margin: 0 auto;
+    padding: 60px 45px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .offers {
+    width: 320px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+}
+
+.offers__title {
+  margin: 0 0 70px;
+  font-family: $font-second;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__title {
+    margin: 0 0 35px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .offers__title {
+    margin: 0 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.offers__container {
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__container {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+
+.offers__hero-action {
+  color: $default-white;
+  width: 560px;
+  background-color: $torch-red;
+  display: flex;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__hero-action {
+    width: 678px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .offers__hero-action {
+    width: 320px;
+    flex-direction: column;
+  }
+}
+
+.offers__hero-action div {
+  width: 50%;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: $mobile-width) {
+  .offers__hero-action div {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.offers__hero-action div h3 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__hero-action div h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .offers__hero-action div h3 {
+    margin: 0 0 9px;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.offers__hero-action div span {
+  display: block;
+  margin: 0 0 40px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+// @media (max-width: $tablet-width) {
+//   .offers__hero-action div span {
+//     font-size: 24px;
+//     line-height: 24px;
+//   }
+// }
+
+@media (max-width: $mobile-width) {
+  .offers__hero-action div span {
+    margin: 0 0 28px;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+  }
+}
+
+.offers__hero-action div p {
+  margin: 0 0 28px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (max-width: $mobile-width) {
+  .offers__hero-action div p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.offers__link {
+  @include link-style;
+
+  width: fit-content;
+  margin-top: auto;
+  text-transform: uppercase;
+  color: $resulution-blue;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  padding-bottom: 5.5px;
+  border-bottom: 1px solid $light-grey;
+
+  &--white {
+    color: $default-white;
+    border-color: $default-white;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .offers__link {
+    margin: auto auto 0;
+  }
+}
+
+.offers__image {
+  display: block;
+  object-fit: cover;
+}
+
+.offers__other-actions {
+  @include list-reset;
+
+  width: auto;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__other-actions {
+    width: auto;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .offers__other-actions {
+    width: 290px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
+
+
+.offers__other-action {
+  padding: 7px;
+  background: linear-gradient(to right, #d10a42, #00359f);
+  width: 560px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__other-action {
+    padding: 7px;
+    width: 328px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .offers__other-action {
+    padding: 7px;
+    width: auto;
+  }
+}
+
+.offers__other-action div {
+  display: flex;
+  flex-direction: column;
+  background-color: $default-white;
+  padding: 20px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__other-action div {
+    height: 100%;
+  }
+}
+
+.offers__other-action div h3 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@media (max-width: $mobile-width) {
+  .offers__other-action div h3 {
+    margin: 0 0 20px;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.offers__other-action div p {
+  margin: 0 0 40px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (max-width: $mobile-width) {
+  .offers__other-action div p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}

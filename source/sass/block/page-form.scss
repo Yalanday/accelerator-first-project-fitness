@@ -1,0 +1,27 @@
+.page-form {
+  width: 100%;
+  background-color: $dark-blue;
+}
+
+.page-form__container {
+  width: 683px;
+  padding: 60px 103px;
+  display: flex;
+  margin-left: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .page-form__container {
+    width: 768px;
+    padding: 60px 45px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-form__container {
+    width: 320px;
+    padding: 70px 15px;
+  }
+}

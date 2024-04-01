@@ -1,0 +1,141 @@
+.faq-details {
+  width: 100%;
+}
+
+.faq-details-item[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.faq-details-item summary::-webkit-details-marker {
+  display: none;
+  width: 100%;
+}
+
+.faq-details-item summary {
+  width: 100%;
+  border-top: 1px solid $light-grey;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  outline: 0;
+  padding: 23.5px 0 22.5px;
+
+
+  &::after {
+    content: "+";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $resulution-blue;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+.faq-details-item[open] summary::after {
+  content: "\2014";
+  color: $default-white;
+  background-color: $resulution-blue;
+}
+
+@media (max-width: $mobile-width) {
+  .faq-details-item summary::after {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+  }
+}
+
+.faq-details-item[open] summary {
+  padding-bottom: 23px;
+}
+
+@media (max-width: $tablet-width) {
+  .faq-details-item summary {
+    outline: 0;
+    padding: 26px 0 25px;
+  }
+
+  .faq-details-item[open] summary {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq-details-item summary {
+    outline: 0;
+    padding: 20.5px 0;
+  }
+
+  .faq-details-item[open] summary {
+    padding-bottom: 20px;
+  }
+}
+
+.faq-details-item span {
+  width: 663px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $dark-blue;
+}
+
+@media (max-width: $tablet-width) {
+  .faq-details-item span {
+    width: 563px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq-details-item span {
+    width: 233px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+
+.faq-details-item p {
+  width: 663px;
+  margin: 0;
+  padding-bottom: 22.5px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (max-width: $tablet-width) {
+  .faq-details-item p {
+    width: 563px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq-details-item p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 20.5px;
+  }
+}
