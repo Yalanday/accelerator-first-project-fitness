@@ -41,12 +41,43 @@
 }
 
 .juri__swiper-button-prev {
+  width: 56px;
+  height: 56px;
   left: -62px;
 }
 
 .juri__swiper-button-next {
+  width: 56px;
+  height: 56px;
   right: -62px;
 }
+
+.juri__swiper-button-prev:focus,
+.juri__swiper-button-next:focus {
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+
+.juri__swiper-button-prev:hover,
+.juri__swiper-button-next:hover {
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+}
+
+.juri__swiper-button-prev:active,
+.juri__swiper-button-next:active {
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+  background-color: $dark-blue;
+  color: $default-white;
+}
+
+.juri__swiper-button-prev:active:after ,
+.juri__swiper-button-next:active::after {
+  color: $default-white;
+}
+
 
 .juri__swiper-button-next::after,
 .juri__swiper-button-prev::after {

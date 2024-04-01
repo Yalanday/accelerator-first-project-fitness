@@ -9,7 +9,11 @@
 
 .video__picture {
   position: absolute;
-  z-index: -10;
+}
+
+.video__image {
+  object-fit: cover;
+  vertical-align: top;
 }
 
 .video__iframe {
@@ -20,7 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // z-index: 2;
 }
 
 .video__button-wrapper {

@@ -30,6 +30,8 @@
 
 .reviews__swiper-button-prev {
   left: 0;
+  width: 56px;
+  height: 56px;
 }
 
 @media (max-width: $tablet-width) {
@@ -40,6 +42,34 @@
 
 .reviews__swiper-button-next {
   right: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.reviews__swiper-button-prev:focus,
+.reviews__swiper-button-next:focus {
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+
+.reviews__swiper-button-prev:hover,
+.reviews__swiper-button-next:hover {
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+}
+
+.reviews__swiper-button-prev:active,
+.reviews__swiper-button-next:active {
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+  background-color: $dark-blue;
+  color: $default-white;
+}
+
+.reviews__swiper-button-prev:active:after ,
+.reviews__swiper-button-next:active::after {
+  color: $default-white;
 }
 
 @media (max-width: $tablet-width) {

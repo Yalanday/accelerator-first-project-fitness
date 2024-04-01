@@ -1,8 +1,24 @@
 import Swiper from 'swiper';
-import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import { Keyboard, Navigation, Pagination } from 'swiper/modules';
+
+
+const reviewsBtnNext = document.querySelector('.reviews__swiper-button-next');
+const reviewsBtnPrev = document.querySelector('.reviews__swiper-button-prev');
+
+const reviewsKeydownBtn = (button) => {
+  button.addEventListener('keydown', (evt) => {
+    if (evt.key === ' ' || evt.key === 'Spacebar') {
+      evt.preventDefault();
+      button.click();
+    }
+  });
+};
+
+reviewsKeydownBtn(reviewsBtnNext);
+reviewsKeydownBtn(reviewsBtnPrev);
 
 export const swiperReview = new Swiper('.reviews__swiper', {
-  modules: [Navigation, Pagination, Mousewheel, Keyboard], //подключаем модуль навигации по кнопкам
+  modules: [Navigation, Pagination, Keyboard],
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -20,13 +36,10 @@ export const swiperReview = new Swiper('.reviews__swiper', {
     enabled: true,
     onlyInViewport: false,
   },
-  mousewheel: {
-    sensitivity: 1,
-  },
   navigation: {
-    nextEl: '.reviews__swiper-button-next', // кнопка вперед
-    prevEl: '.reviews__swiper-button-prev' //  кнопка назад
+    nextEl: '.reviews__swiper-button-next',
+    prevEl: '.reviews__swiper-button-prev'
   },
   slidesPerGroup: 1,
-  loop: true,
+  loop: false,
 });
