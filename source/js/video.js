@@ -18,8 +18,8 @@
       iframe.setAttribute('allowfullscreen', '');
 
       iframe.style.position = 'absolute';
-      iframe.style.width = getComputedStyle(this).width;
-      iframe.style.height = getComputedStyle(this).height;
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
 
       this.replaceWith(iframe);
     });
