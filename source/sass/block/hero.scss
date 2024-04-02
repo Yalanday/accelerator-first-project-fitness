@@ -4,15 +4,16 @@
 
 .hero__container {
   width: 1366px;
-  padding: 26px 175px 120px;
+  padding: 25.5px 176px 116px;
+  padding-right: 175.5px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 55.5px;
   justify-content: flex-end;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .hero__container {
     width: 768px;
     padding: 0 45px 100px;
@@ -22,7 +23,7 @@
   }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .hero__container {
     width: 320px;
     padding: 48px 15px 32px;
@@ -40,7 +41,7 @@
     "descr button";
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .hero__text-content {
     padding-top: 31px;
     column-gap: 26px;
@@ -50,7 +51,7 @@
   }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .hero__text-content {
     width: 100%;
     padding-top: 0;
@@ -71,30 +72,30 @@
   margin: 0;
   grid-area: title;
   font-family: $font-second;
-  font-size: 92px;
-  font-weight: 800;
-  line-height: 110px;
-  letter-spacing: 0.04em;
+  font-size: 91.2px;
+  font-weight: 770;
+  line-height: 111px;
+  letter-spacing: 4.3px;
   text-transform: uppercase;
   color: $default-white;
   text-align: end;
   margin-bottom: 40px;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .hero__title {
     font-size: 72px;
     line-height: 85px;
-    letter-spacing: 0.02em;
+    letter-spacing: 2px;
     margin-bottom: 50px;
   }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .hero__title {
     font-size: 62px;
     line-height: 62px;
-    letter-spacing: 0.01em;
+    letter-spacing: 1px;
     margin-bottom: 0;
   }
 }
@@ -106,12 +107,12 @@
   text-align: end;
   font-family: $font-second;
   font-size: 54px;
-  font-weight: 600;
+  font-weight: 580;
   line-height: 54px;
   color: $default-white;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .hero__subtitle {
     margin: 0 0 10px;
     font-size: 42px;
@@ -119,7 +120,7 @@
   }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .hero__subtitle {
     font-size: 32px;
     line-height: 32px;
@@ -129,19 +130,19 @@
 
 .hero__description-list {
   @include list-reset;
-
+  margin-top: -2px;
   text-align: end;
   grid-area: descr;
   align-self: center;
   display: flex;
   flex-direction: column;
-  font-size: $font-small;
+  font-size: 13.95px;
   color: $default-white;
   font-weight: 400;
   line-height: 22px;
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .hero__description-list {
     line-height: 20px;
     align-self: flex-end;
@@ -150,7 +151,7 @@
 
 .hero__button {
   @include link-style;
-
+  margin-top: -2px;
   color: $default-white;
   display: flex;
   align-items: center;
@@ -180,7 +181,7 @@
 }
 
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .hero__picture {
     display: none;
   }

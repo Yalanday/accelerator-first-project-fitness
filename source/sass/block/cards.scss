@@ -17,7 +17,18 @@
   flex-direction: column;
   align-items: center;
   background-color: $default-white;
+  border: 7px solid $default-white;
+  pointer-events: none;
 }
+
+.card:focus-within {
+  border-image: linear-gradient(131.36deg, rgb(237, 2, 51) 16.95%, rgb(0, 62, 183) 96.59%) 30;
+}
+
+.card:hover {
+  border-image: linear-gradient(131.36deg, rgb(237, 2, 51) 16.95%, rgb(0, 62, 183) 96.59%) 30;
+}
+
 
 @media (width <= 1365px) {
   .card {
@@ -75,7 +86,7 @@
 
 .card__price::after {
   position: absolute;
-  content: attr(data-text);
+  content: attr(data-text) /'';
   font-size: 100px;
   font-weight: 700;
   line-height: 150%;
@@ -96,6 +107,7 @@
   text-align: center;
   width: 195px;
   height: 66px;
+  pointer-events: auto;
 
 
   &:focus {
@@ -119,3 +131,4 @@
     color: rgba(255, 255, 255, 0.7);
   }
 }
+
