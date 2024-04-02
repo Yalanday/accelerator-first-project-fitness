@@ -28,9 +28,26 @@
 
 .nav__link {
   @include link-style;
-
   color: $default-white;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+  padding: 5px 10px;
+
+  &:focus {
+    outline: none;
+    outline: 1px solid $default-white;
+  }
+
+  &:hover {
+    outline: none;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+  }
+
+  &:active {
+    padding: 6px 11px;
+    text-decoration: none;
+    border: none;
+  }
 }

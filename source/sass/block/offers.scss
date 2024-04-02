@@ -159,26 +159,31 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
-  padding-top: 10px;
-  padding-bottom: 5.5px;
-  border-bottom: 1px solid $light-grey;
+  padding: 10px;
+  margin-left: -10px;
+  // border-bottom: 1px solid $light-grey;
   transition: opacity 0.2s ease-in-out;
+  text-decoration: underline;
+  text-underline-offset: 8px;
 
   &:focus {
     box-sizing: border-box;
-    outline: none;
-    padding: 10px;
-    border: 1px solid;
-    margin-left: -10.5px;
-    margin-bottom: -5px;
+    text-decoration: none;
+    outline: 1px solid;
   }
 
   &:hover {
     opacity: 0.8;
+    outline: none;
+    text-decoration: underline;
+    text-underline-offset: 8px;
   }
 
   &:active {
+    outline: none;
     opacity: 1;
+    text-decoration: underline;
+    text-underline-offset: 8px;
   }
 
   &--disabled {
