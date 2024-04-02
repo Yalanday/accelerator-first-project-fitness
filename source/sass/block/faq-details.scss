@@ -16,6 +16,11 @@
   }
 }
 
+.faq-details-item--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .faq-details-item summary::-webkit-details-marker {
   display: none;
   width: 100%;
@@ -48,12 +53,23 @@
     border-radius: 50%;
     transition: background-color 0.3s ease-in-out;
   }
+
 }
 
 .faq-details-item[open] summary::after {
   content: "\2014";
   color: $default-white;
   background-color: $resulution-blue;
+}
+
+.faq-details-item summary:focus::after {
+  background-color: $light-grey;
+  color: $default-white
+}
+
+.faq-details-item summary:hover::after {
+  background-color: $resulution-blue;
+  color: $default-white
 }
 
 @media (max-width: $mobile-width) {
