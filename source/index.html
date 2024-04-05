@@ -391,7 +391,7 @@
                 </ul>
               </div>
             </div>
-            <div class="juri__swiper-slide swiper-slide" data-text="Абсалютлю">
+            <div class="juri__swiper-slide swiper-slide" data-text="Евгений Тайсон">
               <picture class="juri__swiper-picture">
                 <source type="image/webp" media="(min-width: 768px)" width="260" height="300"
                   srcset="img/nevskiy@1x.webp 1x, img/nevskiy@2x.webp 2x">
@@ -402,12 +402,12 @@
                   srcset="img/nevskiy@2x.jpeg 2x" alt="Мистер Абсалютли.">
               </picture>
               <div class="juri__swiper-slide-presentation slide-presentation">
-                <h3 class="slide-presentation__title">Мистер Абсалютли</h3>
-                <span class="slide-presentation__description">Bodybuilding</span>
+                <h3 class="slide-presentation__title">Евгения Тайсон</h3>
+                <span class="slide-presentation__description">Boxing-Yoga</span>
                 <ul class="slide-presentation__list">
                   <li class="slide-presentation__item">No certified</li>
-                  <li class="slide-presentation__item">Говорит что где-то выиграл</li>
-                  <li class="slide-presentation__item">Опыт &mdash; 28 лет</li>
+                  <li class="slide-presentation__item">Член бойцовского клуба</li>
+                  <li class="slide-presentation__item">Опыт &mdash; 8 лет</li>
                 </ul>
               </div>
             </div>
@@ -575,19 +575,19 @@
         <div class="faq__tabs-container">
           <ul class="faq__tabs">
             <li class="faq__tab">
-              <button class="faq__button faq__button--active" type="button">Центр</button>
+              <button class="faq__button faq__button--active" type="button" data-test="toggle">Центр</button>
               <label class="faq__label visually-hidden" for="tab1">&nbsp;</label>
             </li>
             <li class="faq__tab">
-              <button class="faq__button" type="button">Абонемент</button>
+              <button class="faq__button" type="button" data-test="toggle">Абонемент</button>
               <label class="faq__label visually-hidden" for="tab2">&nbsp;</label>
             </li>
             <li class="faq__tab">
-              <button class="faq__button" type="button">Услуги</button>
+              <button class="faq__button" type="button" data-test="toggle">Услуги</button>
               <label class="faq__label visually-hidden" for="tab3">&nbsp;</label>
             </li>
             <li class="faq__tab">
-              <button class="faq__button" type="button">Правила</button>
+              <button class="faq__button" type="button" data-test="toggle">Правила</button>
               <label class="faq__label visually-hidden" for="tab4">&nbsp;</label>
             </li>
           </ul>
@@ -737,9 +737,9 @@
               <input class="faq__radio visually-hidden" type="radio" id="tab4" name="tab">
               <ul class="faq__sublist">
                 <li class="faq__subitem">
-                  <details class="faq-details-item" open>
+                  <details class="faq-details-item">
                     <summary>
-                      <span>Какая музыка играет в помещениях клуба?</span>
+                      <span>Есть в фитнес-центре дресс-код?</span>
                     </summary>
                     <p>Используется соверменная музыка без слов. В дни когда тренируются участники сборной области по
                       силовому троеборью, для поднятия из духа, мы часто вклюяаем тяжелый металл.</p>
@@ -747,21 +747,18 @@
                 </li>
 
                 <li class="faq__subitem">
-                  <details class="faq-details-item">
+                  <details class="faq-details-item" open>
                     <summary>
-                      <span>Где можно посмотреть правила вашего клуба?</span>
+                      <span>Можно ли приводить с собой детей на тренировки?</span>
                     </summary>
-                    <p>Их всего четыре. Первое правило нашего клуба - Никому не говори о клубе. Второе правило нашего
-                      клуба - Никому не говори о клубе. Третье правило нашего клуба - Никому не говори о клубе.
-                      Четвёртое
-                      правило нашего клуба - Никому не говори о клубе.</p>
+                    <p>Да, можно. В рамках комплексов прекрасные детские комнаты и тренеры со специальным образованием.</p>
                   </details>
                 </li>
 
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
-                      <span>Есть кулеры в центре? Предоставляются полотенца?</span>
+                      <span>Какие дополнительные правила посещения центра?</span>
                     </summary>
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
                       При покупке
@@ -772,7 +769,7 @@
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
-                      <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
+                      <span>Нужна ли медицинская справка для посещения залов и бассейна?</span>
                     </summary>
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
                       При покупке
@@ -793,7 +790,7 @@
           <div class="reviews__swiper-wrapper swiper-wrapper">
             <div class="reviews__swiper-slide swiper-slide">
               <figure class="reviews-card">
-                <img width="80" height="80" src="img/reviews-foto1.jpg" alt="Фотография автора">
+                <img width="80" height="80" src="img/rewievs/reviews-foto1.jpg" alt="Фотография автора">
                 <figcaption>
                   <cite>Анна Орлова</cite>
                   <blockquote>
@@ -805,23 +802,22 @@
             </div>
             <div class="reviews__swiper-slide swiper-slide">
               <figure class="reviews-card">
-                <img width="80" height="80" src="img/reviews-foto1.jpg" alt="Фотография автора">
+                <img width="80" height="80" src="img/rewievs/smirnova.jpg" alt="Фотография автора">
                 <figcaption>
-                  <cite>Вероника Орлова</cite>
+                  <cite>Кристина Смирнова</cite>
                   <blockquote>
-                    «Хожу в сёстрами близнецами уже больше года. Нам нравится, что в клубе чисто, много тренажёров.
-                    Зал просторный, даже в вечернее время нет очередей. И отличная сауна.»
+                    «Много лет посещаю данный зал. Отличные тренажёры, талантливые тренеры, есть детская комната. Часто проводят акции, цены доступные.»
                   </blockquote>
                 </figcaption>
               </figure>
             </div>
             <div class="reviews__swiper-slide swiper-slide">
               <figure class="reviews-card">
-                <img width="80" height="80" src="img/reviews-foto1.jpg" alt="Фотография автора">
+                <img width="80" height="80" src="img/rewievs/reviews-foto1.jpg" alt="Фотография автора">
                 <figcaption>
                   <cite>Александра Орлова-Петровская</cite>
                   <blockquote>
-                    «И я тоже жожу с сёстрами уже больше года. Нравится всё!!!»
+                    «И я тоже жожу с сёстой близнецом уже больше года. Нравится всё!!!»
                   </blockquote>
                 </figcaption>
               </figure>
