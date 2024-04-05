@@ -1,15 +1,15 @@
 const indexSections = [
-  {section: 'hero', misMatchThreshold: 1},
-  {section: 'about', misMatchThreshold: 1},
-  {section: 'price', misMatchThreshold: 1},
-  {section: 'games', misMatchThreshold: 1},
-  {section: 'juri', misMatchThreshold: 1},
-  {section: 'features', misMatchThreshold: 1},
-  {section: 'offers', misMatchThreshold: 1},
-  {section: 'faq', misMatchThreshold: 1},
-  {section: 'reviews', misMatchThreshold: 1},
-  {section: 'form', misMatchThreshold: 1},
-  {section: 'footer', misMatchThreshold: 1}
+  {section: 'hero', misMatchThreshold: 2},
+  {section: 'about', misMatchThreshold: 2},
+  {section: 'price', misMatchThreshold: 2},
+  {section: 'games', misMatchThreshold: 2},
+  {section: 'juri', misMatchThreshold: 2},
+  {section: 'features', misMatchThreshold: 2},
+  {section: 'offers', misMatchThreshold: 2},
+  {section: 'faq', misMatchThreshold: 2},
+  {section: 'reviews', misMatchThreshold: 2},
+  {section: 'form', misMatchThreshold: 2},
+  {section: 'footer', misMatchThreshold: 2}
 ];
 
 
