@@ -133,10 +133,10 @@
   grid-template-areas:
     "number title"
     "number descr";
-  row-gap: 8px;
+  row-gap: 7px;
 
   &--center {
-    padding: 40px;
+    padding: 52px 40px 40px;
     height: 100%;
     background-color: $resulution-blue;
     grid-template-columns: 1fr;
@@ -274,7 +274,7 @@
   color: $default-white;
   font-size: 26px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 42px;
 }
 
 @media (max-width: $tablet-width) {
@@ -295,6 +295,7 @@
 
 .features__item--center .features__item-description {
   color: $default-white;
+  margin-top: -3px;
 }
 
 @media (max-width: $tablet-width) {
@@ -328,6 +329,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  margin-top: -4px;
 }
 
 @media (max-width: $mobile-width) {
@@ -335,4 +337,8 @@
     font-size: 14px;
     line-height: 22px;
   }
+}
+
+.features__item--right .features__item-description {
+  margin-top: 0;
 }
