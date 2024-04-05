@@ -97,6 +97,12 @@
   }
 }
 
+.about__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .about__text-container p {
   margin: 0;
   font-weight: 300;

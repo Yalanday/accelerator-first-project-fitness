@@ -5,14 +5,14 @@
   display: flex;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .games {
     width: 768px;
     padding: 60px 45px 30px;
   }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .games {
     width: 320px;
     padding: 25px 15px;
@@ -33,7 +33,7 @@
     "button button";
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .games__left-column {
     width: 300px;
     height: 348px;
@@ -43,7 +43,7 @@
   }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .games__left-column {
     width: 290px;
     min-height: 320px;
@@ -62,7 +62,7 @@
   line-height: 96px;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .games__title {
     font-size: 48px;
     line-height: 54px;
@@ -72,13 +72,14 @@
 .games__description {
   grid-area: descr;
   margin: 0;
+  margin-top: -3px;
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
   color: $default-white;
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .games__description {
     font-size: 16px;
     line-height: 20px;
@@ -99,14 +100,14 @@
   gap: 20px;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .games__date-container {
     width: 100px;
     gap: 10px;
   }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .games__date-container {
     min-width: 56px;
     gap: 10px;
@@ -126,7 +127,7 @@
   margin-bottom: 5.5px;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .games__date-span {
     position: relative;
     padding-bottom: 1.5px;
@@ -135,7 +136,7 @@
   }
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
   .games__date-span--mobile::before {
     position: absolute;
     content: "";
@@ -155,7 +156,7 @@
   gap: 5px;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .games__date-time {
     font-size: 24px;
     line-height: 24px;
@@ -164,12 +165,13 @@
 }
 
 .games__date-time-span {
+  // margin-top: -1.5px;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .games__date-time-span {
     font-size: 12px;
     line-height: 100%;
@@ -178,7 +180,7 @@
 
 .games__button {
   @include link-style;
-
+  margin-bottom: 35px;
   color: $default-white;
   grid-area: button;
   text-align: center;
@@ -186,14 +188,14 @@
   height: 66px;
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .games__button {
     width: 220px;
   }
 }
 
-@media (width <= 767px) {
-  @media (width <= 1365px) {
+@media (width <=767px) {
+  @media (width <=1365px) {
     .games__button {
       width: 210px;
       height: 60px;
