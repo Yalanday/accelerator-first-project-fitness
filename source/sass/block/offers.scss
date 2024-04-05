@@ -53,7 +53,7 @@
 @media (max-width: $tablet-width) {
   .offers__container {
     flex-direction: column;
-    gap: 35px;
+    gap: 37px;
   }
 }
 
@@ -67,12 +67,14 @@
 @media (max-width: $tablet-width) {
   .offers__hero-action {
     width: 678px;
+    height: 463px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .offers__hero-action {
     width: 320px;
+    height: auto;
     flex-direction: column;
   }
 }
@@ -84,12 +86,19 @@
   flex-direction: column;
 }
 
+@media (max-width: $tablet-width) {
+  .offers__hero-action div {
+    padding: 40px 25px 36px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .offers__hero-action div {
     width: 100%;
-    padding: 30px;
+    padding: 30px 30px 26px;
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 }
 
@@ -111,6 +120,7 @@
 
 @media (max-width: $mobile-width) {
   .offers__hero-action div h3 {
+    width: 100%;
     margin: 0 0 9px;
     font-size: 22px;
     line-height: 22px;
@@ -140,6 +150,12 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__hero-action div p {
+    line-height: 25px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -197,15 +213,29 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
   .offers__link {
-    margin: auto auto 0;
+    line-height: 17px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .offers__link {
+    margin: -12px auto 0;
+  }
+}
+
+
 
 .offers__image {
   display: block;
   object-fit: cover;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__image {
+    height: 100%
+  }
 }
 
 .offers__other-actions {
@@ -244,6 +274,7 @@
   .offers__other-action {
     padding: 7px;
     width: 328px;
+    min-height: 188px;
   }
 }
 
@@ -251,6 +282,8 @@
   .offers__other-action {
     padding: 7px;
     width: auto;
+    min-height: 158px;
+    margin-top: 2px;
   }
 }
 
@@ -267,11 +300,24 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .offers__other-action div {
+    padding: 21px 20px 13px;
+
+  }
+}
+
 .offers__other-action div h3 {
   margin: 0 0 10px;
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__other-action div h3 {
+    margin-top: -1px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -288,6 +334,18 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+}
+
+@media (max-width: $tablet-width) {
+  .offers__other-action div p {
+    margin: -1px 0 16px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .offers__other-action div p {
+    line-height: 22px;
+  }
 }
 
 @media (max-width: $mobile-width) {

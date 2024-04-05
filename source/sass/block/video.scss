@@ -38,6 +38,13 @@
   outline: none;
 }
 
+@media (max-width: $mobile-width) {
+  .video__button-wrapper {
+    width: 72px;
+    height: 72px;
+  }
+}
+
 .video__button-wrapper:focus-within {
   border-color: $dark-blue;
   outline: none;
@@ -55,6 +62,13 @@
   outline: none;
   pointer-events: auto;
   cursor: pointer;
+}
+
+@media (max-width: $mobile-width) {
+  .video__button {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .video__button:focus {

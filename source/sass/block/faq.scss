@@ -33,7 +33,7 @@
 @media (max-width: $tablet-width) {
   .faq__title {
     text-align: center;
-    margin: 0 0 45px;
+    margin: 0 0 43px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -165,6 +165,12 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .faq__button {
+    padding: 12px 23px 14px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .faq__button {
     font-size: 16px;
@@ -179,6 +185,6 @@
   border-bottom: 1px solid $light-grey;
 }
 
-.faq__radio:checked + .faq__sublist {
+.faq__radio:checked+.faq__sublist {
   display: block;
 }

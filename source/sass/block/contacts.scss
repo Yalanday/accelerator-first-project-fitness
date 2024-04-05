@@ -23,7 +23,7 @@
 @media (max-width: $mobile-width) {
   .contacts__container {
     width: 320px;
-    padding: 40px 15px;
+    padding: 37px 15px 40px;
     margin: 0 auto;
     align-items: start;
   }
@@ -39,7 +39,7 @@
 
 @media (max-width: $mobile-width) {
   .contacts__title {
-    margin: 0 0 42px;
+    margin: 0 0 37px;
     font-size: 32px;
     line-height: 32px;
   }
