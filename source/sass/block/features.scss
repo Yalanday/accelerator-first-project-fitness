@@ -75,7 +75,7 @@
 @media (max-width: $mobile-width) {
   .features__list {
     column-gap: 0;
-    row-gap: 35px;
+    row-gap: 37px;
     grid-template-columns: none;
     grid-template-rows: none;
     grid-template-areas:
@@ -187,7 +187,7 @@
       "number"
       "title"
       "descr";
-    row-gap: 4px;
+    row-gap: 8px;
     column-gap: 14px;
     text-align: center;
 
@@ -238,7 +238,7 @@
 
 @media (max-width: $tablet-width) {
   .features__item-title {
-    margin: 0 0 12px;
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
   }
@@ -280,7 +280,7 @@
 @media (max-width: $tablet-width) {
   .features__item--center .features__item-number {
     font-size: 24px;
-    line-height: 46px;
+    line-height: 54px;
     margin-top: -25px;
   }
 }
@@ -288,7 +288,7 @@
 @media (max-width: $mobile-width) {
   .features__item--center .features__item-number {
     font-size: 22px;
-    line-height: 22px;
+    line-height: 28px;
     margin-top: -20px;
   }
 }
@@ -300,7 +300,13 @@
 
 @media (max-width: $tablet-width) {
   .features__item--center .features__item-description {
-    margin-top: auto;
+    margin-top: -16px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .features__item--center .features__item-description {
+    margin-top: -3px;
   }
 }
 
@@ -335,7 +341,8 @@
 @media (max-width: $mobile-width) {
   .features__item-description {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 24px;
+    margin-top: 4px;
   }
 }
 

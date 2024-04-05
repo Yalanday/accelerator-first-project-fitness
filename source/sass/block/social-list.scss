@@ -11,12 +11,16 @@
 @media (max-width: $tablet-width) {
   .social-list {
     max-width: 130px;
+    gap: 15px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .social-list {
     max-width: 100%;
+    margin-top: 0;
+    gap: 20px;
+
   }
 }
 

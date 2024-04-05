@@ -31,21 +31,20 @@
 .reviews__swiper-button-prev {
   left: 0;
   top: 48%;
-  padding-right: 40px;
   width: 56px;
   height: 56px;
 }
 
 @media (max-width: $tablet-width) {
   .reviews__swiper-button-prev {
-    left: -4px;
+    left: -22px;
+    top:  47.5%;
   }
 }
 
 .reviews__swiper-button-next {
   right: 0;
   top: 48%;
-  padding-left: 40px;
   width: 56px;
   height: 56px;
 }
@@ -78,7 +77,8 @@
 
 @media (max-width: $tablet-width) {
   .reviews__swiper-button-next {
-    right: -4px;
+    right: -22px;
+    top:  47.5%;
   }
 }
 

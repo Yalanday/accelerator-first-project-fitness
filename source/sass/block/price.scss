@@ -18,6 +18,14 @@
   transform: rotate(150deg);
 }
 
+@media (max-width: $tablet-width) {
+  .price::before {
+    transform: rotate(150deg) scale(0.88);
+    right: -36px;
+    bottom: -13px;
+  }
+}
+
 @media (width <= 767px) {
   .price::before {
     display: none;
@@ -36,7 +44,7 @@
 @media (width <= 1365px) {
   .price__container {
     width: 768px;
-    padding: 60px 45px;
+    padding: 62px 45px 60px;
   }
 }
 
@@ -65,7 +73,7 @@
 
 @media (width <= 767px) {
   .price__title {
-    margin: 0 0 30px;
+    margin: 0 0 27px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -73,12 +81,24 @@
 
 .price__durations-list {
   @include list-reset;
-
   margin-bottom: 39px;
   display: flex;
   gap: 51.5px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   pointer-events: none;
+}
+
+@media (max-width: $tablet-width) {
+  .price__durations-list {
+    gap: 44px;
+    margin-bottom: 46px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .price__durations-list {
+    margin-bottom: 29px;
+  }
 }
 
 .price__duration-button {
@@ -124,9 +144,22 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .price__duration-button {
+    font-size: 18px;
+    padding-bottom: 4.5px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .price__duration-button {
+    font-size: 16px;
+    padding-bottom: 15.5px;
+  }
+}
+
 .price__cards {
   @include list-reset;
-
   display: none;
 }
 
