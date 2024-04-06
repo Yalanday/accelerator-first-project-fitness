@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link rel="preload" href="./fonts/alumni-sans/AlumniSans-SemiBold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-sans/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-condensed/RobotoCondensed-Light.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-condensed/RobotoCondensed-Bold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-condensed/RobotoCondensed-Regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -28,9 +30,9 @@
 
     <section class="hero" data-test="hero">
       <header class="hero__header header">
-        <div class="header__container">
+        <div class="header__container container">
           <picture class="header__logo logo">
-            <source type="image/svg+xml" width="129.5" height="26" media="(min-width: 1366px)"
+            <source type="image/svg+xml" width="130" height="26" media="(min-width: 1366px)"
               srcset="/__spritemap#sprite-logo-fitness-view">
             <source type="image/svg+xml" width="110" height="22" media="(min-width: 768px)"
               srcset="/__spritemap#sprite-logo-tablet-view">
@@ -40,7 +42,7 @@
           <a class="header__link" href="tel:+78005555555">8 800 555-55-55</a>
         </div>
       </header>
-      <div class="hero__container">
+      <div class="hero__container container">
         <div class="hero__text-content">
           <h1 class="hero__title">Фитнес <br> центр</h1>
           <h2 class="hero__subtitle">Омск</h2>
@@ -63,7 +65,7 @@
       </div>
     </section>
 
-    <section class="about" data-test="about">
+    <section class="about container" data-test="about">
       <div class="about__left-column">
         <h2 class="about__title">
           Тренажёрный зал
@@ -122,7 +124,7 @@
     </section>
 
     <section class="price" data-test="price" id="price">
-      <div class="price__container">
+      <div class="price__container container">
         <h2 class="price__title">Абонементы</h2>
         <ul class="price__durations-list">
           <li class="price__duration-item">
@@ -144,40 +146,24 @@
 
             <ul class="price__cards cards">
               <li class="card">
-                <h3 class="card__title">
-                  С тренером
-                </h3>
-                <p class="card__description">
-                  12 занятий
-                </p>
-                <span class="card__price" data-text="5000">
-                  5000
-                </span>
+                <h3 class="card__title">С тренером</h3>
+                <p class="card__description">12 занятий</p>
+                <span class="card__price" data-text="5000">5000</span>
+                <span class="visually-hidden">рублей</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
               <li class="card">
-                <h3 class="card__title">
-                  Дневной
-                </h3>
-                <p class="card__description">
-                  с 8:00 до 17:00
-                </p>
-                <span class="card__price" data-text="1700">
-                  1700
-                </span>
+                <h3 class="card__title">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <span class="visually-hidden">рублей</span>
+                <span class="card__price" data-text="1700">1700</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
               <li class="card">
-                <h3 class="card__title">
-                  Полный день
-                </h3>
-                <p class="card__description">
-                  с 8:00 до 22:00
-                </p>
-                <span class="card__price" data-text="2700">
-                  2700
-                </span>
-
+                <h3 class="card__title">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <span class="card__price" data-text="2700">2700</span>
+                <span class="visually-hidden">рублей</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -186,39 +172,24 @@
             <input class="price__radio" type="radio" id="price-tab2" name="price-tab">
             <ul class="price__cards cards">
               <li class="card">
-                <h3 class="card__title">
-                  С тренером
-                </h3>
-                <p class="card__description">
-                  12 занятий
-                </p>
-                <span class="card__price" data-text="30000">
-                  30000
-                </span>
+                <h3 class="card__title">С тренером</h3>
+                <p class="card__description">12 занятий</p>
+                <span class="card__price" data-text="30000">30000</span>
+                <span class="visually-hidden">рублей</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
               <li class="card">
-                <h3 class="card__title">
-                  Дневной
-                </h3>
-                <p class="card__description">
-                  с 8:00 до 17:00
-                </p>
-                <span class="card__price" data-text="10200">
-                  10200
-                </span>
+                <h3 class="card__title">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <span class="card__price" data-text="10200">10200</span>
+                <span class="visually-hidden">рублей</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
               <li class="card">
-                <h3 class="card__title">
-                  Полный день
-                </h3>
-                <p class="card__description">
-                  с 8:00 до 22:00
-                </p>
-                <span class="card__price" data-text="16200">
-                  16200
-                </span>
+                <h3 class="card__title">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <span class="card__price" data-text="16200">16200</span>
+                <span class="visually-hidden">рублей</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -227,39 +198,24 @@
             <input class="price__radio" type="radio" id="price-tab3" name="price-tab">
             <ul class="price__cards cards">
               <li class="card">
-                <h3 class="card__title">
-                  С тренером
-                </h3>
-                <p class="card__description">
-                  12 занятий
-                </p>
-                <span class="card__price" data-text="60000">
-                  60000
-                </span>
+                <h3 class="card__title">С тренером</h3>
+                <p class="card__description">12 занятий</p>
+                <span class="card__price" data-text="60000">60000</span>
+                <span class="visually-hidden">рублей</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
               <li class="card">
-                <h3 class="card__title">
-                  Дневной
-                </h3>
-                <p class="card__description">
-                  с 8:00 до 17:00
-                </p>
-                <span class="card__price" data-text="20400">
-                  20400
-                </span>
+                <h3 class="card__title">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <span class="card__price" data-text="20400">20400</span>
+                <span class="visually-hidden">рублей</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
               <li class="card">
-                <h3 class="card__title">
-                  Полный день
-                </h3>
-                <p class="card__description">
-                  с 8:00 до 22:00
-                </p>
-                <span class="card__price" data-text="32400">
-                  32400
-                </span>
+                <h3 class="card__title">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <span class="card__price" data-text="32400">32400</span>
+                <span class="visually-hidden">рублей</span>
                 <a class="card__button button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -268,27 +224,21 @@
       </div>
     </section>
 
-    <section class="games" data-test="games">
+    <section class="games container" data-test="games">
       <div class="games__left-column">
         <h2 class="games__title">Super<br> Games</h2>
-        <p class="games__description">
-          Ежегодные соревнования по&nbsp;CrossFit
-        </p>
+        <p class="games__description">Ежегодные соревнования по&nbsp;CrossFit</p>
         <div class="games__date-container">
           <p class="games__date"><span class="games__date-span games__date-span--mobile">Дата</span>
-            <time class="games__date-time" datetime="2019-03-07">
-              7 <span class="games__date-time-span">Марта<br> 2019</span>
+            <time class="games__date-time" datetime="2019-03-07">7
+              <span class="games__date-time-span">Марта<br> 2019</span>
             </time>
           </p>
           <p class="games__date"><span class="games__date-span">Время</span>
-            <time class="games__date-time" datetime="12:00">
-              12:00
-            </time>
+            <time class="games__date-time" datetime="12:00">12:00</time>
           </p>
         </div>
-        <a class="games__button button button--white" href="#">
-          Заполнить заявку
-        </a>
+        <a class="games__button button button--white" href="#">Заполнить заявку</a>
       </div>
       <picture class="games__picture">
         <source type="image/webp" media="(min-width: 1366px)" width="660" height="500"
@@ -306,7 +256,7 @@
       </picture>
     </section>
 
-    <section class="juri" data-test="juri" id="juri">
+    <section class="juri container" data-test="juri" id="juri">
       <h2 class="juri__title">Жюри</h2>
       <div class="juri__swiper-container">
         <div class="juri__swiper swiper">
@@ -391,7 +341,7 @@
                 </ul>
               </div>
             </div>
-            <div class="juri__swiper-slide swiper-slide" data-text="Евгений Тайсон">
+            <div class="juri__swiper-slide swiper-slide" data-text="Евгения Тайсон">
               <picture class="juri__swiper-picture">
                 <source type="image/webp" media="(min-width: 768px)" width="260" height="300"
                   srcset="img/nevskiy@1x.webp 1x, img/nevskiy@2x.webp 2x">
@@ -399,7 +349,7 @@
                 <source type="image/webp" media="(min-width: 768px)" width="260" height="300"
                   srcset="img/nevskiy@1x.jpeg, img/nevskiy@2x.jpeg 2x">
                 <img class="juri__swiper-image" width="227" height="280" src="img/nevskiy@1x.jpeg"
-                  srcset="img/nevskiy@2x.jpeg 2x" alt="Мистер Абсалютли.">
+                  srcset="img/nevskiy@2x.jpeg 2x" alt="Евгения Тайсон.">
               </picture>
               <div class="juri__swiper-slide-presentation slide-presentation">
                 <h3 class="slide-presentation__title">Евгения Тайсон</h3>
@@ -481,7 +431,7 @@
     </section>
 
     <section class="features" data-test="features">
-      <div class="features__container">
+      <div class="features__container container">
         <h2 class="features__title">
           Наши преимущества
         </h2>
@@ -517,21 +467,14 @@
 
     <section class="offers" id="offers" data-test="offers">
       <h2 class="offers__title">Акции</h2>
-      <div class="offers__container">
+      <div class="offers__container container">
         <article class="offers__hero-action">
           <div>
-            <h3>
-              Год
-            </h3>
-            <span>
-              4999
-            </span>
-            <p>
-              Безлимитный абонемент в&nbsp;тренажёрный зал
-            </p>
+            <h3>Год</h3>
+            <span>4999</span>
+            <p>Безлимитный абонемент в&nbsp;тренажёрный зал</p>
             <a class="offers__link offers__link--white" href="#">Подробнее</a>
           </div>
-
           <picture class="offers__picture">
             <source type="image/webp" media="(min-width: 1366px)" width="280" height="460"
               srcset="img/girl-desktop@1x.webp 1x, img/girl-desktop@2x.webp 2x">
@@ -539,7 +482,6 @@
               srcset="img/girl-tablet@1x.webp 1x, img/girl-tablet@2x.webp 2x">
             <source type="image/webp" width="320" height="360"
               srcset="img/girl-mobile@1x.webp 1x, img/girl-mobile@2x.webp 2x">
-
             <source type="image/webp" media="(min-width: 1366px)" width="280" height="460"
               srcset="img/girl-desktop@1x.jpeg 1x, img/girl-desktop@2x.jpeg 2x">
             <source type="image/webp" media="(min-width: 768px)" width="400" height="462"
@@ -548,7 +490,6 @@
               srcset="img/girl-mobile@2x.jpeg 2x" alt="Подпись к картинке.">
           </picture>
         </article>
-
         <ul class="offers__other-actions">
           <li class="offers__other-action">
             <div>
@@ -565,12 +506,11 @@
             </div>
           </li>
         </ul>
-
       </div>
     </section>
 
     <section class="faq" data-test="faq">
-      <div class="faq__container">
+      <div class="faq__container container">
         <h2 class="faq__title">Вопросы и ответы</h2>
         <div class="faq__tabs-container">
           <ul class="faq__tabs">
@@ -600,42 +540,36 @@
                     <summary>
                       <span>Как стать членом фитнес&#8209;центра?</span>
                     </summary>
-                    <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При
-                      покупке
-                      абонемента онлайн, анкета также&nbsp;заполняется онлайн&nbsp;и договор придёт вам на почту.</p>
+                    <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
+                      При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн&nbsp;и договор придёт вам на
+                      почту.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
                       <span>Где можно посмотреть расписание?</span>
                     </summary>
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-                      При покупке
-                      абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                      При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
                       <span>Есть кулеры в центре? Предоставляются полотенца?</span>
                     </summary>
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-                      При покупке
-                      абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                      При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
                       <span>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</span>
                     </summary>
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-                      При покупке
-                      абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                      При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                   </details>
                 </li>
               </ul>
@@ -650,13 +584,10 @@
                       <span>Как стать самым VIP-членом нашего фитнес-центра?</span>
                     </summary>
                     <p>При первом посещении, необходимо заполнить анкету, подписать договор и приобресте золотую
-                      членскую
-                      карту клуба.
-                      При покупке
-                      абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                      членскую карту клуба. При покупке абонемента онлайн, анкета также заполняется онлайн и договор
+                      придёт вам на почту.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
@@ -665,7 +596,6 @@
                     <p>В нашем клубе распологается потрясающая финская сауна со всеми необходимыми принадлежнастями.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
@@ -675,7 +605,6 @@
                       недели проводится генеральная уборка и дезинфекция помещений.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
@@ -696,11 +625,9 @@
                       <span>У вас модный центр или подвальная качалка?</span>
                     </summary>
                     <p>Мы учитываем все пожелания наших клиентов. У нас имеются как современные оборудованные залы, а
-                      так
-                      же для любителей подвальной классики мы оборудовали отдельный зал на цокольном этаже.</p>
+                      так же для любителей подвальной классики мы оборудовали отдельный зал на цокольном этаже.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
@@ -710,7 +637,6 @@
                       различными весами.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
@@ -720,15 +646,13 @@
                       силовому троеборью, для поднятия их духа, мы часто включаем тяжелый металл.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
                       <span>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</span>
                     </summary>
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-                      При покупке
-                      абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                      При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                   </details>
                 </li>
               </ul>
@@ -745,35 +669,31 @@
                       силовому троеборью, для поднятия из духа, мы часто вклюяаем тяжелый металл.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item" open>
                     <summary>
                       <span>Можно ли приводить с собой детей на тренировки?</span>
                     </summary>
-                    <p>Да, можно. В рамках комплексов прекрасные детские комнаты и тренеры со специальным образованием.</p>
+                    <p>Да, можно. В рамках комплексов прекрасные детские комнаты и тренеры со специальным образованием.
+                    </p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
                       <span>Какие дополнительные правила посещения центра?</span>
                     </summary>
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-                      При покупке
-                      абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                      При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                   </details>
                 </li>
-
                 <li class="faq__subitem">
                   <details class="faq-details-item">
                     <summary>
                       <span>Нужна ли медицинская справка для посещения залов и бассейна?</span>
                     </summary>
                     <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-                      При покупке
-                      абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                      При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                   </details>
                 </li>
               </ul>
@@ -783,41 +703,49 @@
       </div>
     </section>
 
-    <section class="reviews" data-test="reviews">
+    <section class="reviews container" data-test="reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__swiper-container">
         <div class="reviews__swiper swiper">
           <div class="reviews__swiper-wrapper swiper-wrapper">
             <div class="reviews__swiper-slide swiper-slide">
               <figure class="reviews-card">
-                <img width="80" height="80" src="img/rewievs/reviews-foto1.jpg" alt="Фотография автора">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" width="80" height="80"
+                    srcset="img/orlova-desktop@2x.webp 1x, img/orlova-desktop@2x.webp 2x">
+                  <source type="image/webp" width="68" height="68"
+                    srcset="img/orlova-mobile@1x.webp 1x, img/orlova-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" width="80" height="80"
+                    srcset="img/orlova-desktop@1x.jpg, img/orlova-desktop@2x.jpg 2x">
+                  <img width="68" height="68" src="img/orlova-mobile@1x.jpg" srcset="img/orlova-mobile@2x.jpg 2x"
+                    alt="Орлова Анна.">
+                </picture>
                 <figcaption>
                   <cite>Анна Орлова</cite>
                   <blockquote>
-                    «Хожу в Supergym уже больше года. Нравится, что&nbsp;в клубе всегда чисто, тренажёры обновляют, персонал
-                    дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее время нет&nbsp;очередей»
+                    «Хожу в Supergym уже больше года. Нравится, что&nbsp;в клубе всегда чисто, тренажёры обновляют,
+                    персонал дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее время нет&nbsp;очередей»
                   </blockquote>
                 </figcaption>
               </figure>
             </div>
             <div class="reviews__swiper-slide swiper-slide">
               <figure class="reviews-card">
-                <img width="80" height="80" src="img/rewievs/smirnova.jpg" alt="Фотография автора">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" width="80" height="80"
+                    srcset="img/smirnova-desktop@2x.webp 1x, img/smirnova-desktop@2x.webp 2x">
+                  <source type="image/webp" width="68" height="68"
+                    srcset="img/smirnova-mobile@1x.webp 1x, img/smirnova-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" width="80" height="80"
+                    srcset="img/smirnova-desktop@1x.jpg, img/smirnova-desktop@2x.jpg 2x">
+                  <img width="68" height="68" src="img/smirnova-mobile@1x.jpg" srcset="img/smirnova-mobile@2x.jpg 2x"
+                    alt="Кристина Смирнова.">
+                </picture>
                 <figcaption>
                   <cite>Кристина Смирнова</cite>
                   <blockquote>
-                    «Много лет посещаю данный зал. Отличные тренажёры, талантливые тренеры, есть детская комната. Часто проводят акции, цены доступные.»
-                  </blockquote>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="reviews__swiper-slide swiper-slide">
-              <figure class="reviews-card">
-                <img width="80" height="80" src="img/rewievs/reviews-foto1.jpg" alt="Фотография автора">
-                <figcaption>
-                  <cite>Александра Орлова-Петровская</cite>
-                  <blockquote>
-                    «И я тоже жожу с сёстой близнецом уже больше года. Нравится всё!!!»
+                    «Много лет посещаю данный зал. Отличные тренажёры, талантливые тренеры, есть детская комната. Часто
+                    проводят акции, цены доступные.»
                   </blockquote>
                 </figcaption>
               </figure>
@@ -831,81 +759,66 @@
       </div>
     </section>
 
-    <section class="form-contacts-container" data-test="form">
-
-      <div class="page-form">
-        <div class="page-form__container">
-          <form class="form" action="https://echo.htmlacademy.ru/">
-            <fieldset class="form__fieldset">
-              <legend class="form__title">Бесплатное занятие</legend>
-              <div class="form__input-wrapper">
-
-                <label class="form__label">
-                  <span class="visually-hidden">Имя</span>
-                  <input class="form__input" type="text" name="name" id="name" placeholder="Имя"
-                    pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+    <section class="form-contacts" data-test="form">
+      <div class="form-contacts__container">
+        <div class="page-form">
+          <div class="page-form__container">
+            <form class="form" action="https://echo.htmlacademy.ru/">
+              <fieldset class="form__fieldset">
+                <legend class="form__title">Бесплатное занятие</legend>
+                <div class="form__input-wrapper">
+                  <label class="form__label">
+                    <span class="visually-hidden">Имя</span>
+                    <input class="form__input" type="text" name="name" id="name" placeholder="Имя"
+                      pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
                     <span class="form__error">Поле должно содержать слова и пробелы</span>
-                </label>
-
-                <label class="form__label">
-                  <span class="visually-hidden">Телефон</span>
-                  <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон"
-                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                  </label>
+                  <label class="form__label">
+                    <span class="visually-hidden">Телефон</span>
+                    <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон"
+                      pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                     <span class="form__error">Введите номер в цифровом формате</span>
-                </label>
-
-
-              </div>
-              <button class="form__button button button--white" type="submit">Отправить</button>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-
-      <div class="contacts">
-        <div class="contacts__container">
-          <h2 class="contacts__title">Контакты</h2>
-
-          <div class="contacts__list">
-
-            <div class="contacts__list-left">
-
-              <div class="contacts__item">
-                <h3 class="contacts__item-title">Адрес:</h3>
-                <p class="contacts__item-description">г. Омск, ул. 60 лет Октября, 7</p>
-              </div>
-
-              <div class="contacts__item">
-                <h3 class="contacts__item-title">График работы:</h3>
-                <p class="contacts__item-description">Пн-Вс: с 8:00 до 22:00</p>
-              </div>
-
-            </div>
-
-            <div class="contacts__list-right">
-
-              <div class="contacts__item">
-                <h3 class="contacts__item-title">Телефон:</h3>
-                <a class="contacts__item-link" href="tel:88005555555">8 800 555-55-55</a>
-              </div>
-
-              <div class="contacts__item">
-                <h3 class="contacts__item-title">Email:</h3>
-                <a class="contacts__item-link" href="mailto:омск@supergym.ru">омск@supergym.ru</a>
-              </div>
-            </div>
-
+                  </label>
+                </div>
+                <button class="form__button button button--white" type="submit">Отправить</button>
+              </fieldset>
+            </form>
           </div>
+        </div>
 
+        <div class="contacts">
+          <div class="contacts__container">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__list">
+              <div class="contacts__list-left">
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title">Адрес:</h3>
+                  <p class="contacts__item-description">г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title">График работы:</h3>
+                  <p class="contacts__item-description">Пн-Вс: с 8:00 до 22:00</p>
+                </div>
+              </div>
+              <div class="contacts__list-right">
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title">Телефон:</h3>
+                  <a class="contacts__item-link" href="tel:88005555555">8 800 555-55-55</a>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title">Email:</h3>
+                  <a class="contacts__item-link" href="mailto:омск@supergym.ru">омск@supergym.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
-
   </main>
 
   <footer class="footer" data-test="footer">
-    <div class="footer__container">
+    <div class="footer__container container">
       <picture class="footer__logo logo">
         <source type="image/svg+xml" width="130" height="26" media="(min-width: 1366px)"
           srcset="/__spritemap#sprite-logo-fitness-view">
@@ -957,7 +870,6 @@
               <use href="/__spritemap#sprite-reddit"></use>
             </svg>
           </a>
-
         </li>
       </ul>
     </div>

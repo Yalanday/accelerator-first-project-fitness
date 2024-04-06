@@ -1,9 +1,9 @@
-.form-contacts-container {
+.form-contacts__container {
   display: flex;
 }
 
 @media (max-width: $tablet-width) {
-  .form-contacts-container {
+  .form-contacts__container {
     flex-direction: column;
   }
 }

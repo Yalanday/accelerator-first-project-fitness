@@ -3,7 +3,7 @@
 }
 
 .hero__container {
-  width: 1366px;
+  width: 100%;
   padding: 25.5px 176px 116px;
   padding-right: 175.5px;
   margin: 0 auto;
@@ -13,19 +13,16 @@
   justify-content: flex-end;
 }
 
-@media (width <=1365px) {
+@media (width <= 1365px) {
   .hero__container {
-    width: 768px;
     padding: 0 45px 100px;
     gap: 27.5px;
     align-items: flex-start;
-    // justify-content: space-between;
   }
 }
 
-@media (width <=767px) {
+@media (width <= 767px) {
   .hero__container {
-    width: 320px;
     padding: 50px 15px 32px;
   }
 }
@@ -41,7 +38,7 @@
     "descr button";
 }
 
-@media (width <=1365px) {
+@media (width <= 1365px) {
   .hero__text-content {
     padding-top: 31px;
     column-gap: 26px;
@@ -51,7 +48,7 @@
   }
 }
 
-@media (width <=767px) {
+@media (width <= 767px) {
   .hero__text-content {
     width: 100%;
     padding-top: 0;
@@ -130,6 +127,7 @@
 
 .hero__description-list {
   @include list-reset;
+
   margin-top: -2px;
   text-align: end;
   grid-area: descr;
@@ -158,6 +156,7 @@
 
 .hero__button {
   @include link-style;
+
   margin-top: -2px;
   color: $default-white;
   display: flex;

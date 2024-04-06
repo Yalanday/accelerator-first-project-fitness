@@ -38,7 +38,7 @@
 @media (max-width: $tablet-width) {
   .reviews__swiper-button-prev {
     left: -22px;
-    top:  47.5%;
+    top: 47.5%;
   }
 }
 
@@ -70,7 +70,7 @@
   color: $default-white;
 }
 
-.reviews__swiper-button-prev:active:after ,
+.reviews__swiper-button-prev:active::after,
 .reviews__swiper-button-next:active::after {
   color: $default-white;
 }
@@ -78,7 +78,7 @@
 @media (max-width: $tablet-width) {
   .reviews__swiper-button-next {
     right: -22px;
-    top:  47.5%;
+    top: 47.5%;
   }
 }
 

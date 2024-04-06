@@ -3,7 +3,7 @@
   gap: 40px;
 }
 
-@media (width <=1365px) {
+@media (width <= 1365px) {
   .cards {
     flex-direction: column;
     gap: 39px;
@@ -37,14 +37,14 @@
 }
 
 
-@media (width <=1365px) {
+@media (width <= 1365px) {
   .card {
     width: 380px;
     height: 461px;
   }
 }
 
-@media (width <=767px) {
+@media (width <= 767px) {
   .card {
     width: 290px;
     min-height: 414px;
@@ -60,7 +60,7 @@
   line-height: 26px;
 }
 
-@media (width <=1365px) {
+@media (width <= 1365px) {
   .card__title {
     margin: 0 0 22px;
     font-size: 24px;
@@ -80,7 +80,7 @@
   margin: 0 0 16.5px;
 }
 
-@media (width <=1365px) {
+@media (width <= 1365px) {
   .card__description {
     margin: 0 0 26px;
   }
@@ -111,7 +111,7 @@
 
 .card__price::before {
   position: absolute;
-  content: attr(data-text) /'';
+  content: attr(data-text);
   font-size: 100px;
   font-weight: 700;
   line-height: 150%;
@@ -129,10 +129,10 @@
 }
 
 .card__price::after {
-  content: '' /'рублей';
+  content: "";
   width: 30px;
   height: 42px;
-  background-image: url('/__spritemap#sprite-rubl-view');
+  background-image: url("/__spritemap#sprite-rubl-view");
   transform: translateY(-59%);
 }
 
@@ -141,11 +141,10 @@
     width: 24px;
     height: 33px;
     transform: translateY(-107%);
-
   }
 }
 
-@media (width <=1365px) {
+@media (width <= 1365px) {
   .card__price {
     margin: 0 0 22px;
     height: 150px;
@@ -163,6 +162,7 @@
 
 .card__button {
   @include link-style;
+
   text-align: center;
   width: 195px;
   height: 66px;

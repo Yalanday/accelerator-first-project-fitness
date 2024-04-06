@@ -1,5 +1,5 @@
 .about {
-  width: 1366px;
+  width: 100%;
   margin: 0 auto;
   padding: 120px 103px 125px;
   display: flex;
@@ -8,7 +8,6 @@
 
 @media (width <= 1365px) {
   .about {
-    width: 768px;
     padding: 60px 45px 35px;
     flex-direction: column;
     gap: 36px;
@@ -17,7 +16,6 @@
 
 @media (width <= 767px) {
   .about {
-    width: 320px;
     padding: 40px 0;
     flex-direction: column;
     gap: 36px;
@@ -161,7 +159,6 @@
 .about__image {
   display: block;
   object-fit: cover;
-
 }
 
 .about__video {

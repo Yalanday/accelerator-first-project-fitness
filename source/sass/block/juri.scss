@@ -1,20 +1,18 @@
 .juri {
+  width: 100%;
   min-width: 0;
-  width: 1366px;
   margin: 0 auto;
   padding: 100px 103px;
 }
 
 @media (width <= 1365px) {
   .juri {
-    width: 768px;
     padding: 30px 104px 60px;
   }
 }
 
 @media (width <= 767px) {
   .juri {
-    width: 320px;
     padding: 40px 46.5px;
   }
 }
