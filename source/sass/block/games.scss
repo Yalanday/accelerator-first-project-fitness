@@ -21,7 +21,9 @@
 .games__left-column {
   background-color: $torch-red;
   width: 500px;
-  height: 500px;
+
+  // height: 500px;
+  min-height: 320px;
   padding: 60px 80px;
   display: grid;
   row-gap: 30px;
@@ -34,7 +36,7 @@
 @media (width <= 1365px) {
   .games__left-column {
     width: 300px;
-    height: 348px;
+    min-height: 348px;
     padding: 40px;
     row-gap: 13px;
     column-gap: 20px;
@@ -48,6 +50,13 @@
     row-gap: 19px;
     column-gap: 12px;
   }
+}
+
+.games__picture {
+  min-height: 290px;
+  display: flex;
+  align-items: center;
+  background-color: #000145;
 }
 
 .games__title {
@@ -171,7 +180,6 @@
 }
 
 .games__date-time-span {
-  // margin-top: -1.5px;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -206,6 +214,7 @@
   .games__button {
     width: 220px;
     margin-top: -4px;
+    margin-bottom: auto;
   }
 }
 
@@ -213,11 +222,5 @@
   .games__button {
     width: 210px;
     height: 60px;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .games__picture {
-    margin-top: -28px;
   }
 }

@@ -46,6 +46,8 @@
 .offers__container {
   display: flex;
   gap: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: $tablet-width) {
@@ -65,7 +67,7 @@
 @media (max-width: $tablet-width) {
   .offers__hero-action {
     width: 678px;
-    height: 463px;
+    min-height: 462px;
   }
 }
 
@@ -223,12 +225,6 @@
   .offers__link {
     margin: -12px auto 0;
   }
-}
-
-
-.offers__image {
-  display: block;
-  object-fit: cover;
 }
 
 @media (max-width: $tablet-width) {
