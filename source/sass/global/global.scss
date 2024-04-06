@@ -20,14 +20,20 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-@media (width < 1366px) {
+@media (width > 1365px) {
   body {
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
 }
 
 main {
   flex: 1;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+  vertical-align: top;
 }
 
 .container {
