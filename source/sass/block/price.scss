@@ -33,7 +33,7 @@
 }
 
 .price__container {
-  width: 1366px;
+  width: 100%;
   margin: 0 auto;
   padding: 100px 103px;
   display: flex;
@@ -43,14 +43,12 @@
 
 @media (width <= 1365px) {
   .price__container {
-    width: 768px;
     padding: 62px 45px 60px;
   }
 }
 
 @media (width <= 767px) {
   .price__container {
-    width: 320px;
     padding: 40px 15px;
   }
 }
@@ -81,6 +79,7 @@
 
 .price__durations-list {
   @include list-reset;
+
   margin-bottom: 39px;
   display: flex;
   gap: 51.5px;
@@ -160,6 +159,7 @@
 
 .price__cards {
   @include list-reset;
+
   display: none;
 }
 

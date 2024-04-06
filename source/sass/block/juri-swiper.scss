@@ -73,7 +73,7 @@
   color: $default-white;
 }
 
-.juri__swiper-button-prev:active:after ,
+.juri__swiper-button-prev:active::after,
 .juri__swiper-button-next:active::after {
   color: $default-white;
 }

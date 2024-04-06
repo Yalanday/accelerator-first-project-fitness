@@ -118,19 +118,18 @@
 
 .form__error {
   position: absolute;
-	color: #ff121f;
-	text-align: left;
-	font-size: 14px;
+  color: #ff121f;
+  text-align: left;
+  font-size: 14px;
   line-height: 14px;
-	display: block;
-	margin-top: 5px;
-	display: none;
+  margin-top: 5px;
+  display: none;
 }
 
 .form__input:invalid:not(:placeholder-shown) {
-	border-color: red;
+  border-color: #ff0000;
 }
 
 .form__input:invalid:not(:placeholder-shown) + .form__error {
-	display: block;
+  display: block;
 }

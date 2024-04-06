@@ -17,7 +17,6 @@
       iframe.style.height = '100%';
       this.replaceWith(iframe);
     });
-
   });
 })();
 
